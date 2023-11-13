@@ -1,13 +1,13 @@
-import fs from "node:fs";
-import ora from "ora"
-import { dirname } from "node:path"
-import { fileURLToPath } from "node:url"
-import path from 'node:path'
+import fs from 'node:fs';
+import ora from 'ora';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export async function genConfig(configPath) {
-  let _path = configPath || path.join(__dirname, "../config.json")
+  let _path = configPath || path.join(__dirname, '../config.json');
   let config = await readJsonFile(_path);
   // console.log(path.resolve(__dirname, "../config.json"));
   return config;
@@ -21,7 +21,7 @@ export async function genConfig(configPath) {
  */
 export function writeFileContent(filePath, fileContent, onFinally = () => {}) {
   let spinner = ora();
-  fs.writeFile(filePath, fileContent, "utf-8", (error) => {
+  fs.writeFile(filePath, fileContent, 'utf-8', (error) => {
     if (!error) {
       // spinner.succeed(`已写入${chalk.yellow(filePath)}`);
       onFinally && onFinally(spinner, true);

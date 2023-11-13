@@ -84,13 +84,13 @@ var MD5 = function (string) {
   }
 
   function WordToHex(lValue) {
-    var WordToHexValue = "",
-      WordToHexValue_temp = "",
+    var WordToHexValue = '',
+      WordToHexValue_temp = '',
       lByte,
       lCount;
     for (lCount = 0; lCount <= 3; lCount++) {
       lByte = (lValue >>> (lCount * 8)) & 255;
-      WordToHexValue_temp = "0" + lByte.toString(16);
+      WordToHexValue_temp = '0' + lByte.toString(16);
       WordToHexValue =
         WordToHexValue +
         WordToHexValue_temp.substr(WordToHexValue_temp.length - 2, 2);
@@ -99,8 +99,8 @@ var MD5 = function (string) {
   }
 
   function Utf8Encode(string) {
-    string = string.replace(/\r\n/g, "\n");
-    var utftext = "";
+    string = string.replace(/\r\n/g, '\n');
+    var utftext = '';
 
     for (var n = 0; n < string.length; n++) {
       var c = string.charCodeAt(n);

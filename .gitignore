@@ -2,3 +2,6 @@ config.local.json
 node_modules
 #demo
 .idea
+
+# npm file
+.npmrc

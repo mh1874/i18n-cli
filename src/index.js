@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import { Command } from "commander";
+import { Command } from 'commander';
 // const pkg = require("./package.json");
-import { registerCommand } from "./command/index.js";
-import { translateCmd } from "./command/translate.js";
-import { setCmd } from './command/set.js'
+import { registerCommand } from './command/index.js';
+import { translateCmd } from './command/translate.js';
+import { setCmd } from './command/set.js';
 const program = new Command();
 
 // program.usage("<command> [options]");

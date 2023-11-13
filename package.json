@@ -1,23 +1,21 @@
 {
-  "name": "zzoffduty-cli",
-  "version": "0.1.11",
+  "name": "thinghoo-i18n-cli",
+  "version": "1.0.0",
   "description": "work tool fun",
   "main": "src/index.js",
   "type": "module",
-  "author": "Gank",
+  "author": "ThinghooFE <hao.meng@thinghoo.com>",
   "bin": {
     "mechine": "src/index.js",
-    "zz": "src/index.js"
+    "th": "src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zzdaddy/zzoffduty-cli.git"
+  "publishConfig": {
+    "registry": "http://nexus.beijing-epoch.com/repository/npm-thinghoo/"
   },
   "keywords": [
-    "cli",
-    "zz",
-    "zaozao",
-    "zzoffduty"
+    "thinghoo",
+    "i18n",
+    "cli"
   ],
   "scripts": {
     "init": "npm run sync",
@@ -29,7 +27,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {},
   "dependencies": {
     "axios": "1.4.0",
