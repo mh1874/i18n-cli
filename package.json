@@ -1,6 +1,6 @@
 {
   "name": "@thinghoo-cli/i18n",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "work tool fun",
   "main": "src/index.js",
   "type": "module",
